@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="Calendar_Datepicker/air-datepicker.css">
+</head>
+<body>
+    <div id="myDiv" class="header">
+        <h1>Мой список задач</h1>
+        <input type="text" id="myInput" placeholder="...">
+        <span onclick="newElement()" class="addBtn">Добавить</span>
+    </div>
+
+    <ul id="myUl">
+        <li class="checked">Сделать ДЗ</li>
+        <li>Пересмотреть урок</li>
+        <li>Выпить кофе</li>
+        <li>Посмотреть футбол</li>
+    </ul>
+    <script src="main.js"></script>
+    <script src="Calendar_Datepicker/air-datepicker.js"></script>
+    <script>
+        new AirDatepicker('#myInput',{
+            autoClose: true
+        })
+
+    </script>
+</body>
+</html>
